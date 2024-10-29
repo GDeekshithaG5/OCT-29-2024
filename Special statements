@@ -1,0 +1,87 @@
+'''
+Special statements in control statements
+
+Break:
+     break statements terminates set of instructions writtern under loop as soon a particular  condition occurs.
+
+Continue:
+        continue statements enable to execute body of loop even though certain abnormal condition occurs.
+
+Pass:
+    pass statement is enabling to create empty or abstract class or method or loop.
+
+Return:
+      return statement is used in function to send back computed resultant value to the calling function.
+'''
+
+'''
+PROGRAMS:
+#Break  statement:
+#1. Write a python progrom to validate not use _ underscore to implement scenario we must use beak
+gmail=input("Enter gmail id")
+for char in gmail:
+  print(char,end=" ")
+  if(char == "_"):
+    print("Under score _ occurance kindly use only a-z 0-9 . operator as part mail")
+    break
+
+#2. Write a python program using break to stop working money dispensary machine when fake note is series detected
+list_of_series=[1111,1112,1113,1114,1121,1122,1115,1116]
+for j in  list_of_series:
+  print(j,end=" ")
+  if(j == 1121 or j == 1122):
+    print("Its is Fake")
+    break
+
+#continue program:
+#1.Write a python progrom to validate not use _ underscore to implement scenario we must use continue
+gmail=input("Enter gmail id")
+for char in gmail:
+  print(char,end=" ")
+  if(char == "_"):
+    print("Under score _ occurance kindly use only a-z 0-9 . operator as part mail")
+    continue
+
+#2.Write a python program using continue to stop working money dispensary machine when fake note is series detected
+list_of_series=[1111,1112,1113,1114,1121,1122,1115,1116]
+for j in  list_of_series:
+  print(j,end=" ")
+  if(j == 1121 or j == 1122):
+    print("Its is Fake")
+    continue
+
+'''
+#Pass statements
+
+#1. Create abstract or empty class
+class automobile:
+  pass
+
+class samrt_watch:
+  pass
+
+class drone:
+  pass
+
+#2. Create abstract or empty method/function
+def man_can_fly(p1,p2,p3,pn):
+  pass
+
+def bike_can_fly(p1,p2,p3,pn):
+  pass
+
+def snake_can_fly(p1,p2,p3,pn):
+  pass
+
+def men_can_give_birth(p1,p2,p3,pn):
+  pass
+
+def chat_bot_for_medical_recommendation(p1,p2,p3,pn):
+  pass
+
+
+#3. Create abstract or empty loop
+while(10<5):
+  pass
+
+'''
